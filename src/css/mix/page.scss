@@ -1,0 +1,384 @@
+.loading{
+    width: 100%;
+    height: 100%;
+    background: #ede9de;
+    z-index: 100;
+}
+
+.section1, .section2, .section3, .section4{
+    width: 100%;
+    height:100%;
+}
+.section1{
+    background: url(../../images/page1_bg.png) no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    &__Chineseknot{
+        width: 13%;
+        height: 13%;
+        background: url(../../images/page1_Chineseknot.png) no-repeat;
+        background-size: 100% 100%;
+        position: absolute;
+        top: 0;
+        left:25%;
+        margin-top: -30px;
+
+        -webkit-animation: go1 5s ease-in-out alternate infinite;
+        -moz-animation: go1 5s ease-in-out alternate infinite;
+        animation: go1 5s ease-in-out alternate infinite;
+    }
+
+    @keyframes go1 {
+        0% {
+            -webkit-transform: rotate(10deg);
+            -webkit-transform-origin: top center;
+            -moz-transform: rotate(10deg);
+            -moz-transform-origin: top center;
+            transform: rotate(10deg);
+            transform-origin: top center;
+        }
+        100% {
+            -webkit-transform: rotate(-10deg);
+            -webkit-transform-origin: top center;
+            -moz-transform: rotate(-10deg);
+            -moz-transform-origin: top center;
+            transform: rotate(-10deg);
+            transform-origin: top center;
+        }
+    }
+    // &__mother{
+    //     width: 23%;
+    //     height: 27%; 
+    //     background: url(../../images/page1_mother.png) no-repeat;
+    //     background-size:100%;
+    //     position: absolute;
+    //     top: 8.8%;
+    //     left:0;
+    // }
+    &__mother{
+        width: 23%;
+        height: 0; 
+        background: url(../../images/page1_mother.png) no-repeat;
+        background-size: contain;
+        padding-bottom: 48%;
+        position: absolute;
+        top: 8.8%;
+        left:0;
+    }
+    &__motherhand{
+        width: 100%;
+        height: 0; 
+        background: url(../../images/page1_mother_hand.png) no-repeat;
+        background-size: contain;
+        padding-bottom: 50%;
+        position: absolute;
+        bottom: 0;
+        left:0;
+
+        animation: go2 2s ease-in-out alternate infinite;
+    }
+
+    @keyframes go2 {
+        0% {
+            transform: rotate(-20deg);
+            transform-origin: left top;
+        }
+        100% {
+            transform: rotate(0deg);
+            transform-origin: left top;
+        }
+    }
+    // &__father{
+    //     width: 32%;
+    //     height: 30%;
+    //     background: url(../../images/page1_father.png) no-repeat;
+    //     background-size: 100%;
+    //     position: absolute;
+    //     top: 5.3%;
+    //     left: 30%;
+    // }
+    &__father{
+        width: 30%;
+        height: 0; 
+        background: url(../../images/page1_father.png) no-repeat;
+        background-size: contain;
+        padding-bottom: 77.7%;
+        position: absolute;
+        top: 6.8%;
+        left:30%;
+    }
+    &__wife{
+        width: 23%;
+        height: 0; 
+        background: url(../../images/page1_wife.png) no-repeat;
+        background-size: contain;
+        padding-bottom: 44.77%;
+        position: absolute;
+        top: 9.8%;
+        left:67%;
+    }
+    &__wifehand{
+        width: 100%;
+        height: 0; 
+        background: url(../../images/page1_wife_hand.png) no-repeat;
+        background-size: contain;
+        padding-bottom: 60.77%;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+
+        animation: go3 2s ease-in-out alternate infinite;
+    }
+    @keyframes go3 {
+        0% {
+            transform: rotate(20deg);
+            transform-origin: right top;
+        }
+        100% {
+            transform: rotate(0deg);
+            transform-origin: right top;
+        }
+    }
+
+    &__text1{
+        width: 45%;
+        height: 15%;
+        background: url(../../images/page1_text1.png) no-repeat;
+        background-size: 100%;
+        position: absolute;
+        top: 49%;
+        left: 45%;
+        display: none;
+    }
+    &__text2{
+        width: 44%;
+        height: 15%;
+        background: url(../../images/page1_text2.png) no-repeat;
+        background-size: 100%;
+        position: absolute;
+        top: 54%;
+        left: 52%;
+        display: none;
+    }
+    &__doctor{
+        width: 50%;
+        height: 41%;
+        background: url(../../images/page1_doctor.png) no-repeat;
+        background-size: 100%;
+        position: absolute;
+        bottom: 0;
+        left:0;
+    }
+    &__doctormouse{
+        width: 5%;
+        height: 41%;
+        background: url(../../images/page1_doctor_mouse.png) no-repeat;
+        background-size: 100%;
+        position: absolute;
+        bottom: 21%;
+        left: 77%;
+        display: none;
+    }
+}
+.section2{
+    background: url(../../images/page2_bg1.png) no-repeat;
+    background-size: 100% 100%;
+    &__snow{
+        width: 100%;
+        height: 100%;
+        background: url(../../images/page2_snow1.png) no-repeat;
+        background-size: 100%;
+        z-index: 10;
+    }
+    &__lanternL{
+        width: 50%;
+        height: 0; 
+        background: url(../../images/page2_lanternl.png) no-repeat;
+        background-size: contain;
+        padding-bottom: 63.34%;
+        position: absolute;
+        top: 0;
+        left:0;
+    }
+    &__lanternR{
+        width: 50%;
+        height: 0; 
+        background: url(../../images/page2_lanternr.png) no-repeat;
+        background-size: contain;
+        padding-bottom: 54.54%;
+        position: absolute;
+        top: 0;
+        right: -20.54%;
+    }
+    &__lanternlightL{
+        width: 100%;
+        height: 0;
+        background: url(../../images/page2_lanternlightl.png) no-repeat;
+        background-size: contain;
+        padding-bottom: 47.34%;
+        position: absolute;
+        top: 3%;
+        left: 0;
+        display: none;
+    }
+    &__lanternlightR{
+        width: 100%;
+        height: 0;
+        background: url(../../images/page2_lanternlightr.png) no-repeat;
+        background-size: contain;
+        padding-bottom: 40.54%;
+        position: absolute;
+        top: 2%;
+        right: -78.54%;
+        display: none;
+    }
+    &__text1{
+        width: 44%;
+        height: 0;
+        background: url(../../images/page2_text1.png) no-repeat;
+        background-size: contain;
+        padding-bottom: 70.8%;
+        position: absolute;
+        top: 5%;
+        right: -8%;
+        display: none;
+    }
+    &__text2{
+        width: 100%;
+        height: 0;
+        background: url(../../images/page2_text2.png) no-repeat;
+        background-size: contain;
+        padding-bottom: 84.08%;
+        position: absolute;
+        top: 10%;
+        right: -74%;
+        display: none;
+    }
+    &__carlight{
+        width: 80%;
+        height: 0;
+        background: url(../../images/page2_carlight.png) no-repeat;
+        background-size: contain;
+        padding-bottom: 22%;
+        position: absolute;
+        top: 64%;
+        right: 9%;
+        display: none;
+    }
+    &__car{
+        width: 50%;
+        height: 0;
+        background: url(../../images/page2_car.png) no-repeat;
+        background-size: contain;
+        padding-bottom: 43%;
+        position: absolute;
+        top: 63%;
+        right: 0;
+    }
+    &__ground{
+        width: 100%;
+        height: 0;
+        background: url(../../images/page2_ground.png) no-repeat;
+        background-size: contain;
+        padding-bottom: 36%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        display: none;
+    }
+
+}
+.section3{
+    background: url(../../images/page3_bg.png) no-repeat;
+    background-size: 100% 100%;
+    &__shadow{
+        width: 32%;
+        height: 60%;
+        background: url(../../images/page3_shadow.png) no-repeat;
+        background-size: 100%;
+        position: absolute;
+        top: 28%;
+        left: 0;
+        display: none;
+    }
+    &__doctorshadow{
+        width: 34%;
+        height: 5%;
+        background: url(../../images/page3_doctorshadow.png) no-repeat;
+        background-size: 100%;
+        position: absolute;
+        top: 82%;
+        left: 12%;
+        display: none;
+    }
+    &__doctor{
+        width: 34%;
+        height: 60%;
+        background: url(../../images/page3_doctor.png) no-repeat;
+        background-size: 100%;
+        position: absolute;
+        top: 31%;
+        left: 20%;
+    }
+    &__mask{
+        width: 100%;
+        height: 100%;
+        background-color: #162c37;
+        opacity: 0.44;
+    }
+    &__cover{
+        width: 100%;
+        height: 100%;
+        background: url(../../images/page3_cover.png) no-repeat;
+        background-size: 100%;
+        opacity: 0.9;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: none;
+    }
+    &__text1{
+        width: 7.5%;
+        height: 50%;
+        background: url(../../images/page3_text1.png) no-repeat;
+        background-size: 100%;
+        position: absolute;
+        top: 4%;
+        left: 75%;
+        display: none;
+    }
+    &__text2{
+        width: 6.5%;
+        height: 50%;
+        background: url(../../images/page3_text2.png) no-repeat;
+        background-size: 100%;
+        position: absolute;
+        top: 3.5%;
+        left: 84%;
+        display: none;
+    }
+}
+.section4{
+    background: url(../../images/page4_bg1.png) no-repeat;
+    background-size: 100% 100%;
+    &__arrow{
+        width: 33%;
+        height: 4%;
+        background: url(../../images/page4_arrow.png) no-repeat;
+        background-size: 100%;
+        position: absolute;
+        top: 60%;
+        left: 33%;
+    }
+    &__text{
+        width: 75%;
+        height: 7%;
+        margin: 2% auto;
+        background: url(../../images/page4_text.png) no-repeat;
+        background-size: 100%;
+        margin-top: 65%;
+        // position: absolute;
+        // top: 65%;
+        // left: 13%;
+    }
+}
